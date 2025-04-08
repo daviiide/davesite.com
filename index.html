@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="highlight">TastyTrail</title>
+    <link rel="icon" href="logo.jpg"> 
+    <link rel="stylesheet" href="second.css">
+    <script>
+        // Redirect user to login page if they haven't logged in
+        if (localStorage.getItem("loggedIn") !== "true") {
+            window.location.href = "login.html";
+        }
+    </script>
+</head>
+<body>
+    <div class="background-animation"></div>
+    <nav class="top-nav">
+        <div class="nav-content">
+            <div class="logo">🍔 <span class="motto">Taste the Best, Feel the Rest!</span></div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="animated-header">
+            <h1>TastyTrail</h1>
+            <p class="highlight">Delicious food delivered to your doorstep</p>
+        </header>
+
+        <div class="features-banner">
+            <div class="feature">
+               
+                <span class="highlight">Fast Delivery</span>
+            </div>
+            <div class="feature">
+                <i class="fas fa-star"></i>
+                <span class="highlight">Top Rated</span>
+            </div>
+            <div class="feature">
+                <i class="fas fa-shield-alt"></i>
+                <span class="highlight">Secure Payment</span>
+            </div>
+        </div>
+
+        <main class="card-grid">
+            <div class="card" onclick="location.href='b1.html'">
+                <div class="card-icon">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <div class="card-text">Browse Restaurant</div>
+                <div class="card-description">Explore local favorites</div>
+            </div>
+
+            <div class="card" onclick="location.href='o1.html'">
+                <div class="card-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                </div>
+                <div class="card-text">Order Now</div>
+                <div class="card-description">Quick & easy ordering</div>
+            </div>
+
+            <div class="card" onclick="location.href='user.html'">
+                <div class="card-icon">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="card-text">User Account</div>
+                <div class="card-description">Manage your profile</div>
+            </div>
+
+            <div class="card" onclick="location.href='order-history.html'">
+                <div class="card-icon">
+                    <i class="fas fa-tasks"></i>
+                </div>
+                <div class="card-text">Order Management</div>
+                <div class="card-description">Track your orders</div>
+            </div>
+
+            <div class="card" onclick="location.href='story.html'">
+                <div class="card-icon">
+                    <i class="fas fa-info-circle"></i>
+                </div>
+                <div class="card-text">About Us</div>
+                <div class="card-description">Our story</div>
+                <span class="notification">1</span>
+            </div>
+        </main>
+
+        <div class="popular-section">
+            <h2 class="highlight">Popular Right Now</h2>
+            <div class="popular-items">
+                <div class="popular-item">
+                    <img src="10.jpg">
+                    <span>Mang Inasal</span>
+                </div>
+                <div class="popular-item">
+                    <img src="11.jfif">
+                    <span>Mc Donald</span>
+                </div>
+                <div class="popular-item">
+                    <img src="12.jpeg">
+                    <span>Jollibee</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Download Our App</h3>
+                <div class="app-buttons">
+                    <button class="app-button"><i class="fab fa-apple"></i> App Store</button>
+                    <button class="app-button"><i class="fab fa-google-play"></i> Play Store</button>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <div class="logo">🍔</div>
+                    <div class="logo">🍔</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="first.js"></script>
+</body>
+</html>

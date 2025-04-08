@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TastyTrail</title>
+    <link rel="icon" href="logo.jpg"> 
+    <link rel="stylesheet" href="ua.css">
+</head>
+<body>
+
+<nav>
+        <h1>🍔Order Now 🍽️</h1>  
+
+    </nav>
+
+<div class="container">
+    <div class="tabs">
+        <button class="tab active" onclick="openTab('dashboard')">Dashboard</button>
+        <button class="tab" onclick="openTab('orders')">Order History</button>
+        <button class="tab" onclick="openTab('profile')">Profile Settings</button>
+    </div>
+
+    <div id="dashboard" class="content active">
+        <h2>Welcome to Your Dashboard!</h2>
+        <p>Check your recent activity and quick stats here.</p>
+    </div>
+
+    <div id="orders" class="content">
+        <h2>Order History</h2>
+        <ul id="orderList">No orders yet? Start your tasty journey now!</ul>
+    </div>
+
+    <div id="profile" class="content">
+        <h2>Profile Settings</h2>
+        <p>Manage your profile information and preferences here.</p>
+    </div>
+</div>
+
+<script src="ua.js"></script>
+
+</body>
+</html>

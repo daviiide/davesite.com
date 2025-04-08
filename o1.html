@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TastyTrail</title>
+    <link rel="icon" href="logo.jpg"> 
+    <link rel="stylesheet" href="o2.css">
+    <style>
+        /* Cart button in the upper right corner */
+        #viewCartBtn {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: #ff4757;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        #viewCartBtn:hover {
+            background: #e84118;
+        }
+
+        /* Back button styling */
+        .back-btn {
+            display: block;
+            width: 150px;
+            margin: 20px auto;
+            text-align: center;
+            background: #ff4757;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        .back-btn:hover {
+            background: #e84118;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Order Now 🍽️</h1>
+        <!-- Cart button in the upper right corner -->
+        <button id="viewCartBtn">🛒 View Cart</button>
+    </header>
+
+    <main>
+        <div id="menu"></div>
+        <div id="cartModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Your Cart</h3>
+                <div id="cartItems"></div>
+                <button id="checkoutBtn">💳 Checkout</button>
+            </div>
+        </div>
+
+        <div id="checkoutModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Checkout</h3>
+                <label for="paymentMethod">Choose Payment Method:</label>
+                <select id="paymentMethod">
+                    <option value="cod">Cash on Delivery</option>
+                    <option value="gcash">GCash</option>
+                    <option value="credit-card">Credit Card</option>
+                </select>
+                <button id="confirmOrderBtn">✅ Confirm Order</button>
+            </div>
+        </div>
+
+        <a href="order-history.html" class="back-btn">📜 View Order History</a>
+
+        <a href="javascript:history.back()" class="back-btn">👈</a>
+
+    </main>
+
+    <div id="animation-container"></div>
+
+    <script src="o3.js"></script>
+</body>
+</html>
